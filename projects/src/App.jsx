@@ -1,4 +1,5 @@
 import Accordian from "./components/accordian";
+import ImageSlider from "./components/image-slider";
 import RandomColor from "./components/random-color";
 import StartRating from "./components/star-rating";
 
@@ -9,7 +10,13 @@ function App() {
 
       {/* <RandomColor /> */}
 
-      <StartRating noOfStarts={10} />
+      {/* <StartRating noOfStarts={10} /> */}
+
+      <ImageSlider
+        url={"https://picsum.photos/v2/list"}
+        page={"1"}
+        limit={"10"}
+      />
     </>
   );
 }
